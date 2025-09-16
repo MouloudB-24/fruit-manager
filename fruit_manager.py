@@ -42,6 +42,7 @@ def afficher_tresorerie(tresorerie):
 def recolter(inventaire, fruit, quantite):
     inventaire[fruit] = inventaire.get(fruit, 0) + quantite
     print(f"\nRécolté {quantite} {fruit} supplémentaire !")
+    return inventaire
 
 
 def vendre(inventaire, fruit, quantite, tresorerie, prix):
